@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name"           : "pm2-sample",
+      "script"         : "/pm2-sample/index.js",
+      "args"           : "-o /pm2-sample/app.log",
+      "merge_logs"     : true,
+      "error_file"     : "/pm2-sample/app_pm2.log",
+      "out_file"       : "/pm2-sample/app_pm2.log",
+      "exec_mode"      : "cluster",
+      "instances"      : "2",
+      "wait_ready"     : true,
+      "listen_timeout" : 15000,
+      "kill_timeout"   : 60000
+    }
+  ]
+}
