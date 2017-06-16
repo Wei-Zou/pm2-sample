@@ -1,0 +1,32 @@
+{
+  "connections": [
+    {
+      "port": 8080,
+      "routes": {
+        "timeout": {
+          "server": 10000
+        }
+      },
+      "load": {
+        "maxHeapUsedBytes": 1073741824,
+        "maxRssBytes": 2147483648,
+        "maxEventLoopDelay": 5000
+      },
+      "labels": [
+        "api",
+        "http"
+      ]
+    },
+    {
+      "port": 8999,
+      "labels": [
+        "admin"
+      ]
+    }
+  ],
+  "server": {
+    "load": {
+      "sampleInterval": 1000
+    }
+  }
+}

@@ -3,7 +3,7 @@
     {
       "name"           : "pm2-sample",
       "script"         : "/pm2-sample/index.js",
-      "args"           : "-o /pm2-sample/app.log",
+      "args"           : "-c /pm2-sample/config/app-config.json",
       "merge_logs"     : true,
       "error_file"     : "/pm2-sample/app_pm2.log",
       "out_file"       : "/pm2-sample/app_pm2.log",
